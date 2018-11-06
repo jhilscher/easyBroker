@@ -1,0 +1,12 @@
+<div fxLayout="row">
+  <img [src]="logoRef"/>
+</div>
+<div fxLayout="row">
+  <span class="questionText">{{text}}</span>
+</div>
+<div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="25%"><i class="fa fa-angle-double-left"></i></div>
+  <div fxFlex="25%"><span class="answerText">Ja</span></div>
+  <div fxFlex="25%"><span class="answerText">Nein</span></div>
+  <div fxFlex="25%"><i class="fa fa-angle-double-right"></i></div>
+</div>

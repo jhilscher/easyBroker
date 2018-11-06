@@ -1,13 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { AppComponent } from './app.component';
-import { SwingModule } from 'angular2-swing';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {AppComponent} from './app.component';
+import {SwingModule} from 'angular2-swing';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatIconModule} from '@angular/material/icon'
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {DialogModule} from "./dialog/dialog.module";
+import {HttpClientModule} from "@angular/common/http";
+import {FlexLayoutModule} from "@angular/flex-layout";
+
 
 @NgModule({
   declarations: [
@@ -17,14 +20,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
+    FlexLayoutModule,
     SwingModule,
     MatButtonModule,
     MatCheckboxModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
