@@ -1,0 +1,75 @@
+html, body, ul, li {
+    margin: 0;
+    padding: 0; 
+    
+}
+  
+  body {
+    background: #FCD424;
+    font: normal 16px/24px 'Helvetica Neue', Helvetica, Arial, freesans, sans-serif; }
+  
+  button, input, code {
+    display: inline-block;
+    outline: none;
+    font: inherit;
+    border: none;
+    background: #FDE991;
+    padding: 0; }
+  
+  
+  input {
+    width: 50px; }
+  
+  #viewport {
+    width: calc(100%-20px);
+    height: 80%;
+    background: #eee;
+    margin: 0 auto 0;
+    position: relative; }
+    #viewport .stack {
+      width: 300px;
+      height: 400px;
+      background: #333;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      margin-left: -100px;
+      border-radius: 10px; }
+    #viewport li {
+        width: 100%;
+        height: 100%;
+      list-style: none;
+      background: #fff;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+    }
+      #viewport li.clubs, #viewport li.spades {
+        color: #373737; }
+      #viewport li.diamonds, #viewport li.hearts {
+        color: #ED5D52; }
+      #viewport li.in-deck:nth-child(3) {
+        top: 2px;
+        transform: translate(2px, 2px) rotate(0.4deg); }
+      #viewport li.in-deck:nth-child(2) {
+        top: 4px;
+        transform: translate(-4px, -2px) rotate(-1deg); }
+    #viewport #control {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0; }
+
+  
+  #source {
+    width: 500px;
+    margin: 20px auto; }
+    #source a {
+      color: #C7433E; }
