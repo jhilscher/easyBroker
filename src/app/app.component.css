@@ -7,16 +7,7 @@ html, body, ul, li {
   body {
     background: #FCD424;
     font: normal 16px/24px 'Helvetica Neue', Helvetica, Arial, freesans, sans-serif; }
-  
-  button, input, code {
-    display: inline-block;
-    outline: none;
-    font: inherit;
-    border: none;
-    background: #FDE991;
-    padding: 0; }
-  
-  
+    
   input {
     width: 50px; }
   
