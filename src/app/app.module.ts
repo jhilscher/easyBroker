@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { SwingModule } from 'angular2-swing';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatIconModule} from '@angular/material/icon'
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
     HttpModule,
     SwingModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

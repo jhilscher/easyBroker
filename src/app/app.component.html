@@ -1,3 +1,12 @@
+<mat-toolbar color="primary">
+    <span>App Name</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button> 
+      <mat-icon class="example-icon">menu</mat-icon>
+    </button>
+</mat-toolbar>
+
+
 <div id="viewport">
   <ul class="stack" swing-stack  [stackConfig]="stackConfig"  #myswing1 (throwout)="onThrowOut($event)">
     <li swing-card #mycards1 [ngClass]="c.name" *ngFor="let c of cards">
